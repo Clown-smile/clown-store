@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>#a9a9a9</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		var animated = document.getElementById('animated_div');
+		if (animated.style.animation === undefined) {
+		  animated.parentNode.innerText = '您的浏览器不支持CSS3 动画';
+		} else {
+		
+		  document.querySelector('#playBtn').addEventListener('click', run);
+	
+		  document.querySelector('#pauseBtn').addEventListener('click', function() {
+			animated.style.animationPlayState = 'paused';
+		  });
+	
+		  document.querySelector('#replayBtn').addEventListener('click', function() {
+			animated.classList.remove('flip-animation-1');
+			setTimeout(function() {
+			  animated.classList.add('flip-animation-1');
+			  run();
+			}, 10);
+		  });
+		}
+		function run() {
+		  animated.style.animationPlayState = 'running';
+		}
+	</script>
+</head>
+
+
+<body>
+<div class="stage">
+	<!-- 代码部分begin -->
+	<!-- 书的主体 -->
+	<div class="tb" >
+	
+		<div class="img">
+		<img src="picture/123.gif" width="80" height="80"  />	
+		</div>
+			<a href="javascript:void(0);" onclick="move()" color="#F08080;">
+			about me
+			</a>
+		</div>
+	<div class="tb1">
+		<div class="img">
+			<img src="picture/152.gif" width="80" height="80"  />		
+		</div>
+			<a >
+			My education
+			</a>
+	</div>
+	<div class="tb1">
+		<div class="img">
+			<img src="picture/1234.gif" width="50" height="50"  />		
+		</div>
+			<a >
+			Work Experence
+			</a>
+	</div>
+	<div class="tb1">
+		<div class="img">
+			<img src="picture/11.gif" width="50" height="50"  />		
+		</div>
+			<a >
+			Honor
+			</a>
+	</div>
+	<div class="tb1">
+		<div class="img">
+			<img src="picture/123456.gif" width="50" height="50"  />		
+		</div>
+			<a >
+			School Experence
+			</a>
+	</div>
+		<div class="tb1">
+		<div class="img">
+			<img src="picture/12345.gif" width="50" height="50"  />		
+		</div>
+			<a >
+			Anticipant jop
+			</a>
+		</div>
+	<div class="book preserve-3d">
+		
+		<!-- 书的最后一页 -->
+		<div class="book-page-box book-page-4 preserve-3d">
+			<div class="book-page page-front">
+				<p>第三页</p>
+			</div>
+		</div>
+		<!-- 书的第三页 -->
+		<div class="book-page-box book-page-3 preserve-3d flip-animation-3">
+			<div class="book-page page-front">
+				<p>第二页</p>
+			</div>
+		</div>
+		<!-- 书的第二页 -->
+		<div class="book-page-box book-page-2 preserve-3d flip-animation-2">
+			<div class="book-page page-front">
+				<p>第一页</p>
+			</div>
+		</div>
+		<!-- 书的封面 -->
+		<div class="book-page-box book-page-1 preserve-3d flip-animation-1">
+		
+			<div class="book-page page-front">
+			<div class="img1">
+		<img src="picture/8-26.jpg" width="500px" height="600px"/>
+		</div>
+				<p>
+					HOME PAGE
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					SHOOL:HDU
+					<br>
+					<br>
+					<br>
+					NAME:AMOSE
+				</p>
+			</div>
+		</div>
+	</div>
+	 <div align="center">
+		<button id="playBtn">播放</button>
+		<button id="pauseBtn">暂停</button>
+		<button id="replayBtn">重放</button>
+	</div>
+</div>
+</body>
+</html>
