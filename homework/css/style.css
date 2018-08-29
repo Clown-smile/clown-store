@@ -1,12 +1,4 @@
 
-body, html {
-	height: 100%;
-}
-body {
-	background-color: #a9a9a9;
-	font-family: '微软雅黑';
-	
-}
 .img1{
 	position:absolute;
 	margin:opx atuo;
@@ -76,62 +68,6 @@ body {
 	50% {
 
 		transform: rotateY(-140deg);
-	}
-	100% {
-		transform: rotateY(0deg);
-	}
-		
-}
-@keyframes flipBook4 {
-	0% {
-
-		transform: rotateY(0deg);
-	}
-	50% {
-
-		transform: rotateY(-130deg);
-	}
-	100% {
-		transform: rotateY(0deg);
-	}
-		
-}
-@keyframes flipBook5 {
-	0% {
-
-		transform: rotateY(0deg);
-	}
-	50% {
-
-		transform: rotateY(-120deg);
-	}
-	100% {
-		transform: rotateY(0deg);
-	}
-		
-}
-@keyframes flipBook6 {
-	0% {
-
-		transform: rotateY(0deg);
-	}
-	50% {
-
-		transform: rotateY(-110deg);
-	}
-	100% {
-		transform: rotateY(0deg);
-	}
-		
-}
-@keyframes flipBook7 {
-	0% {
-
-		transform: rotateY(0deg);
-	}
-	50% {
-
-		transform: rotateY(-100deg);
 	}
 	100% {
 		transform: rotateY(0deg);
